@@ -13,7 +13,7 @@ public class CardOrderNegativeTest {
         $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Ivanov");
         $("[data-test-id=phone] input").setValue("+79059059590");
-        $("[data-test-id=agreement] input").click();
+        $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $(".input_type_text .input__sub").shouldHave(Condition.exactText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
 
@@ -24,7 +24,7 @@ public class CardOrderNegativeTest {
         $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("");
         $("[data-test-id=phone] input").setValue("+79059059590");
-        $("[data-test-id=agreement] input").click();
+        $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $(".input_type_text .input__sub").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
 
@@ -35,7 +35,7 @@ public class CardOrderNegativeTest {
         $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Иванов");
         $("[data-test-id=phone] input").setValue("");
-        $("[data-test-id=agreement] input").click();
+        $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $(".input_type_tel .input__sub").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
 
@@ -46,7 +46,7 @@ public class CardOrderNegativeTest {
         $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Иванов");
         $("[data-test-id=phone] input").setValue("+790590590901");
-        $("[data-test-id=agreement] input").click();
+        $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $(".input_type_tel .input__sub").shouldHave(Condition.exactText("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
 
@@ -57,7 +57,7 @@ public class CardOrderNegativeTest {
         $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Иванов");
         $("[data-test-id=phone] input").setValue("+7905905909");
-        $("[data-test-id=agreement] input").click();
+        $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $(".input_type_tel .input__sub").shouldHave(Condition.exactText("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
 
@@ -78,7 +78,7 @@ public class CardOrderNegativeTest {
         $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("");
         $("[data-test-id=phone] input").setValue("");
-        $("[data-test-id=agreement] input").click();
+        $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $(".input_type_text .input__sub").shouldHave(Condition.exactText("Поле обязательно для заполнения"));
 
